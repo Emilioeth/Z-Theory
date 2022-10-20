@@ -790,6 +790,25 @@ p.about-info-p2 {
     }
 }
 @media (max-width: 500px){
+    .project-1:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -3;
+        background-image: url('../images/mashup-bg.png');
+        background-size: cover;
+        background-position: 80%;
+    }
+    .project-1 {
+        background:transparent;
+    }
+    .project-2{
+        background-attachment: local;
+    }
     .projects-info {
         height: 440vw;
     }
