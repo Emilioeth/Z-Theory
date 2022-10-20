@@ -27,6 +27,7 @@ const home2P = document.querySelector('.home2-p');
 const contactModule = document.querySelector('.contact-module-wrapper');
 const contactModuleX = document.querySelector('.contact-module-x');
 const aboutInfo = document.querySelector('.about-section');
+const projectsMainSection = document.querySelector('.projects-main-section');
 
 window.onload = () => {
     
@@ -225,6 +226,7 @@ infoBtn1.addEventListener('click', function () {
     setTimeout(() => {
         projectsInfo.classList.add('open');
         header.classList.add('info');
+        projectsMainSection.style.opacity = '0'
     }, 200);
 });
 infoBtn2.addEventListener('click', function () {
@@ -242,6 +244,7 @@ infoBtn2.addEventListener('click', function () {
     setTimeout(() => {
         projectsInfo.classList.add('open');
         header.classList.add('info');
+        projectsMainSection.style.opacity = '0'
     }, 200);
 });
 infoBtn3.addEventListener('click', function () {
@@ -259,12 +262,14 @@ infoBtn3.addEventListener('click', function () {
     setTimeout(() => {
         projectsInfo.classList.add('open');
         header.classList.add('info');
+        projectsMainSection.style.opacity = '0'
     }, 200);
 });
 
 homeP.addEventListener('click', function () {
     projectsInfo.classList.remove('open');
     header.classList.remove('info');
+    projectsMainSection.style.opacity = '1'
 
     setTimeout(() => {
         infoP.classList.remove('inactive');
@@ -289,6 +294,7 @@ infoP.addEventListener('click', function() {
     setTimeout(() => {
         infoP.classList.add('inactive');
         home2P.classList.remove('inactive');
+        projectsMainSection.style.opacity = '0'
     }, 350);
 
     setTimeout(() => {
@@ -303,6 +309,7 @@ home2P.addEventListener('click', function () {
     aboutInfo.classList.remove('open');
     header.classList.remove('about');
     header.classList.remove('info');
+    projectsMainSection.style.opacity = '1'
 
     setTimeout(() => {
         infoP.classList.remove('inactive');
