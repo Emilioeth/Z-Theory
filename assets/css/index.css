@@ -425,6 +425,7 @@ p.about-info-p2 {
     width: 70vw;
     display: flex;
     justify-content: space-between;
+    height: auto;
 }
 .info-img1-div img {
     width: 100%;
@@ -432,7 +433,7 @@ p.about-info-p2 {
 }
 .info-img2-div img {
     width: 45%;
-    height: 100%;
+    height: auto;
 }
 /* Projects Info End */
 @media (max-width: 1750px){
