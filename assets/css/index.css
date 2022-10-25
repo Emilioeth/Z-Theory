@@ -1128,14 +1128,14 @@ Pre-loader
 
 #preloader {
     overflow: hidden;
-    background-color: #ffff;
+    background-color: #c2c0c0;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     position: fixed;
     z-index: 99999;
-    color: rgb(11, 32, 59);
+    color: rgb(145, 153, 167);
   }
   
   #preloader .jumper {
@@ -1151,7 +1151,7 @@ Pre-loader
   }
   
   #preloader .jumper > div {
-    background-color: rgb(11, 32, 59);
+    background-color: rgb(145, 153, 167);
     width: 10px;
     height: 10px;
     border-radius: 100%;
