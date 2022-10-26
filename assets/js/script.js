@@ -1,5 +1,8 @@
 // Page loading animation
 
+const videoHero = document.querySelector('.video-hero');
+const videoFigura = document.querySelector('.video-figura');
+
 let loadInterval = setInterval(() => {
     if (document.readyState === 'complete') {
         clearInterval(loadInterval)
@@ -18,12 +21,26 @@ let loadInterval = setInterval(() => {
             }, 300);
         });
     };
+
+    var source = document.createElement('source');
+
+    source.src = "./assets/images/hero-video.mp4";
+    source.type = "video/mp4";
+
+    videoHero.appendChild(source)
+
+    var source2 = document.createElement('source');
+
+    source2.src = "./assets/images/figurabg.mp4";
+    source2.type = "video/mp4";
+
+    videoFigura.appendChild(source2)
+
 }, 500);
 
 
 
 const mainContainer = document.querySelector('.projects-container');
-const videoFigura = document.querySelector('.video-figura');
 const hero = document.querySelector('.hero');
 const header = document.querySelector('header');
 const projects = document.querySelector('.projects');
