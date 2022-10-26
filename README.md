@@ -1,7 +1,7 @@
 
   ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Roboto+Condensed&size=30&pause=2000&color=0078D6&width=435&lines=Z-Theory+Labs;By+Emili0)
 
-  ![Project Img](./assets/images/readmeIMG.png)
+  ![Project Img](./assets/images/readmeIMG.webp)
   
   ## Description
   Z-Theory Labs is a modern web & blockchain technology solutions agency, specialized in the digitalization of businesses and individuals
