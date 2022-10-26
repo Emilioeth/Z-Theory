@@ -2,7 +2,6 @@
 
 let loadInterval = setInterval(() => {
     if (document.readyState === 'complete') {
-        console.log('1')
         clearInterval(loadInterval)
         if($('.cover').length){
             $('.cover').parallax({
