@@ -3,6 +3,11 @@
 const videoHero = document.querySelector('.video-hero');
 const videoFigura = document.querySelector('.video-figura');
 
+let aboutSection = document.querySelector('.about-section');
+let aboutImage = document.querySelector('.about-image');
+let aboutInfoTeam = document.querySelector('.about-info-team');
+let aboutTeam = document.querySelector('.about-team');
+
 let loadInterval = setInterval(() => {
     if (document.readyState === 'complete') {
         clearInterval(loadInterval)
