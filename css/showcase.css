@@ -1184,6 +1184,21 @@
 
 
 @media only screen and (max-width: 767px) {
+
+	.sec3-inf {
+		padding-top: 70px;
+		padding-bottom: 0px;
+	}
+
+	.one_half.serv-inf {
+		width: 90%!important;
+	}
+
+	.services-wecan-sec {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	
 	.slide-arrow {		
 		-webkit-transform: scale(0.75) translateX(-4px);
