@@ -1,412 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z-Theory</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <title>Z-Theory Labs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Z-Theory Labs ® Digital Creative Studio. Aesthetics that captivate clients. Creating experiences everyone can enjoy." />
+    <meta name="author" content="Z-Theory Labs">
+    <meta charset="UTF-8" />    
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+   
 </head>
-<body>
- 
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-   <!--  ***** Preloader End ***** -->
 
-    <header>
-        <p class="contact-p">
-            <a>
-                Contact
-            </a>
-        </p>
 
-        <p class="info-p">
-            <a>
-                About
-            </a>
-        </p>
+<body class="hidden hidden-ball hero-below-caption smooth-scroll uppercase-text" data-primary-color="#a3834b">
 
-        <p class="inactive home-p">
-            <a>
-                Home
-            </a>
-        </p>
-
-        <p class="inactive home2-p">
-            <a>
-                Home
-            </a>
-        </p>
-    </header>
-
-    <div class="contact-module-wrapper">
-        <div class="contact-module">
-            <div class="contact-module-header">
-                <h1>
-                    Contact
-                </h1>
-                <div class="contact-module-x">
-                    <i class="fa-solid fa-x"></i>
-                </div>
-            </div>
-
-            <p class="contact-module-p1">
-                Contact us with any inquiries you might have. We 
-                will get back to you as soon as possible. Make sure 
-                to leave us a descriptive message!
-            </p>
-
-            <p class="contact-module-p2">
-                Mail: <a href="mailto:contact@ztheory.io" target="_blank">contact@ztheory.io</a> <br/>
-                Insta: <a href="https://www.instagram.com/ztheorylabs/" target="_blank">@ZTheoryLabs</a> <br/>
-                1718 N Las Palmas Ave <br/>
-                Los Angeles, CA 90028 <br/>
-            </p>
-
-        </div>
-    </div>
-
-    <main class="projects-container">
-
-        <div class="about-section">
-            <div class="about-image">
-                <div class="info-about-p">
-                    <p>
-                        About
-                    </p>
-                </div>
-                <img src="./assets/images/info-bg-img.webp" alt="info image" class="img-about-big">
-                <img src="./assets/images/info-bg-img-small.webp" alt="info image" class="img-about-small">
-            </div>
-            <div class="about-info-team">
-                <div class="about-info">
-                    <p class="about-info-p1">
-                        Z-Theory Labs is a Web & Block-chain Digitalization Agency based 
-                        in Los Angeles, CA.
-                    </p>
-                    <p class="about-info-p2"> 
-                        Z-Theory Media is a Digitalization Agency that focuses on modernizing 
-                        businesses with unique and eye-catching website designs, aid Web3.0 
-                        brands in their BlockChain projects as well as help individuals build their 
-                        online presence.
-                    </p>
-                </div>
-                <div class="arrow-to">
-                    <i class="fa-solid fa-arrow-down-long"></i>
-                </div>
-                <div class="about-team">
-                    <div class="team-title">
-                        <h1>
-                            The Team
-                        </h1>
+	
+	<main>		
+       <!-- Preloader -->
+        <div class="preloader-wrap" data-firstline="Loading" data-secondline="Website">
+            <div class="outer">
+                <div class="inner">                    
+                    <div class="trackbar">
+                    	<div class="preloader-intro">Z-THEORY</div>
+                        <div class="loadbar"></div>
                     </div>
-                    <div class="team-pictures">
-                        <div class="team-member-1 team-members">
-                            <img src="./assets/images/team_img_1.png" alt="image member 1">
-                            <p class="p-team-name">
-                                Emilio <br/>
-                                <span> CEO </span>
-                            </p>
-                            <ul class="team-position-list">
-                                <li>
-                                   -  Software Developer
-                                </li>
-                                <li>
-                                   -  UI/UX Designer
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="team-member-2 team-members">
-                            <img src="./assets/images/myteam1.jpg" alt="image member 2">
-                            <p class="p-team-name">
-                                Andres <br/>
-                               <span> CFO </span>
-                            </p>
-                            <ul class="team-position-list">
-                                <li>
-                                   -  Business Director
-                                </li>
-                                <li>
-                                   - Public Relations 
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="percentage-wrapper"><div class="percentage" id="precent"></div></div>
+                    <div class="percentage-intro">Please Wait</div>                     
                 </div>
             </div>
         </div>
-
-        <div class="projects-main-section">
-            <div class="hero">
-                <video autoplay loop muted plays-inline playsinline class="video-hero" poster="./assets/images/HeroPoster.webp">
-    
-                </video>
-
-                <h1 class="animate__animated animate__fadeIn animate__delay-1s">
-                    Z-Theory
-                </h1>
-
-                <h2 class="animate__animated animate__fadeIn animate__delay-2s">
-                    Experiment with your future
-                </h2>
-                
-                <p class="animate__animated animate__fadeIn animate__delay-2s">
-                    Projects
-                </p>
-                
-                <i class="fa-solid fa-arrow-down-long" id="arrow-proj"></i>
-
-            </div>
-
+        <!--/Preloader -->          
         
-            <div class="project-1 projects">
-                <div class="project-body">
-
-                    <div class="body-section-info bmashup">
-                        <h2>
-                            Mashup
-                        </h2>
-                        <p>
-                            Mashup Digial art collection gallery. Geometrically based Clean, Abstract, & Minimalistic digitally designed & created artwork.
-                        </p>
-                        <button class="info-btn-1">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-
-                    <div class="body-section-imgs imashup">
-                        <div class="img1 single-img">
-                            <img src="./assets/images/mashup-img1.webp" alt="project 1 image 1">
-                        </div>
-                        <div class="img2 single-img">
-                            <img src="./assets/images/mashup-img2.webp" alt="project 1 image 2">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="project-2 projects">
-                <div class="project-body">
-
-                    <div class="body-section-info bnovozco">
-                        <h2>
-                            Novozco
-                        </h2>
-                        <p>
-                            Novozco Pools is a fast growing pool business that was in need of digitalization, they were looking for a beautiful and simple website that would portray a modern yet professional look for their online presence.
-                        </p>
-                        <button class="info-btn-2">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-
-                    <div class="body-section-imgs inovozco">
-                        <div class="img1 single-img">
-                            <img src="./assets/images/novozco-img1.webp" alt="project 1 image 1">
-                        </div>
-                        <div class="img2 single-img">
-                            <img src="./assets/images/novozco-img2.jpg" alt="project 1 image 2">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="project-3 projects">
-
-                <video autoplay loop muted plays-inline playsinline class="video-figura">
-
-                </video>
+        <div class="cd-index cd-main-content">
+    
+            <!-- Page Content -->
+            <div id="page-content" class="dark-content" data-bgcolor="#eee">
                 
-                <div class="project-body body-figura">
-                    <div class="body-section-info bfigura">
-                        <h2>
-                            Figura
-                        </h2>
-                        <p>
-                            Figura is a realistic modern sculpture 3D art gallery, digitally owned, designed and created. 
-                        </p>
-                        <button class="info-btn-3">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-
-                    <div class="body-section-imgs ifigura">
-                        <div class="img1 single-img">
-                            <img src="./assets/images/Figura-img1.webp" alt="project 1 image 1">
-                        </div>
-                        <div class="img2 single-img">
-                            <img src="./assets/images/Figura-img2.webp" alt="project 1 image 2">
-                        </div>
-                    </div>
+                <!-- Header -->
+                <header class="classic-menu invert-header" data-menucolor="#171717">
+                    <div id="header-container">
                     
+                    
+                    <!-- Logo -->
+                    <div id="logo" class="hide-ball">
+                        <a class="ajax-link" data-type="page-transition" href="index.html">
+                            <img class="black-logo" src="images/logo.png" alt="Z-Theory Logo">
+                            <img class="white-logo" src="images/logo-white.png" alt="Z-Theory Logo">
+                        </a>
+                    </div>
+                    <!--/Logo -->
+                                
+                    
+                    <!-- Navigation -->
+                    <nav> 
+                        <div class="nav-height">
+                            <div class="outer">
+                                <div class="inner">           
+                                    <ul data-breakpoint="1025" class="flexnav">
+                                        <li class="link menu-timeline"><a class="active" href="#"><div class="before-span"><span data-hover="Home">Home</span></div></a>
+                                        </li>
+                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="services.html"><div class="before-span"><span data-hover="Services">Services</span></div></a>
+                                        </li>
+                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="about.html"><div class="before-span"><span data-hover="About">About</span></div></a></li>
+                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="contact.html" onclick="formActivation()"><div class="before-span"><span data-hover="Contact">Contact</span></div></a></li>
+                                    </ul>            
+                                </div>
+                            </div> 
+                        </div>          
+                    </nav>
+                    <!--/Navigation -->
+                    
+                    
+                    <!-- Menu Burger -->
+                    <div class="button-wrap right menu burger-lines">
+                        <div class="icon-wrap parallax-wrap">
+                            <div class="button-icon parallax-element">
+                                <div id="burger-wrapper">
+                                    <div id="menu-burger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-text sticky right"><span data-hover="Menu">Menu</span></div> 
+                    </div>
+                    <!--/Menu Burger -->
+                
+                    </div>
+                </header>
+                <!--/Header -->
+                
+                
+                
+                <!-- Content Scroll -->
+                <div id="content-scroll">
+                
+                
+                    <!-- Main -->
+                    <div id="main">
+                    
+                        <!-- Hero Section -->
+                        <div id="hero">
+                            <div id="hero-styles">
+                                <div id="hero-caption" class="content-full-width parallax-scroll-caption indent-title">
+                                    <div class="inner">                                                  
+                                        <div class="hero-title-wrapper"><h1 class="hero-title"><span>Digital</span><span>Creative</span><span>Studio</span></h1></div>
+                                        <div class="hero-subtitle-wrapper"><h5 class="hero-subtitle"><span>We turn aestethics into experiences, Creativity into process, Art into business.</span></h5></div>
+                                    </div>
+                                </div>
+                                <div id="hero-footer">
+                                    <div class="hero-footer-left">
+                                        <div class="button-wrap right scroll-down">
+                                            <div class="icon-wrap parallax-wrap">
+                                                <div class="button-icon parallax-element">
+                                                    <i class="arrow-icon-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="button-text sticky right"><span data-hover="Scroll to Explore">Scroll to Explore</span></div> 
+                                        </div>
+                                    </div>
+                                    <div class="hero-footer-right">
+                                        <div id="info-text">Latest Work</div>
+                                    </div>
+                                </div>                                  
+                            </div>
+                        </div>                      
+                        <!--/Hero Section -->   
+                             
+                        
+                        <!-- Main Content -->
+                        <div id="main-content">
+                            <!-- Main Page Content -->
+                            <div id="main-page-content" class="content-max-width">
+
+                                <!-- Row -->
+                                <div class="content-row row_padding_bottom full light-section" data-bgcolor="#eee">
+                                
+                                
+                                    <div id="itemsWrapperLinks">
+                                        <div id="itemsWrapper" class="webgl-fitthumbs fx-three">                            
+                                    
+                                            <!-- Portfolio Wrap -->
+                                            <div class="portfolio-wrap flex-grid content-full-width fade-scaleout-effect">                
+                                                <!-- Portfolio Columns -->
+                                                <div class="portfolio">
+                                            
+                                                    <div class="item wide trigger-item branding design">
+                                                        <div class="item-parallax">
+                                                            <div class="item-appear">                                    		
+                                                                <div class="item-content">                            	                                    
+                                                                    <a class="item-wrap ajax-link-project" data-type="page-transition" href="latest-project.html"></a>
+                                                                    <div class="item-wrap-image">
+                                                                        <img src="images/latest-proj.png" class="item-image grid__item-img trigger-item-link" alt="">
+                                                                    </div>
+                                                                    <img class="grid__item-img grid__item-img--large" src="images/latest-proj.png" alt="" />
+                                                                </div>                                             
+                                                            </div>
+                                                        </div>                                        
+                                                    </div>
+                                        
+                                                </div>
+                                                <!--/Portfolio -->                
+                                            </div>
+                                            <!--/Portfolio Wrap -->
+                                    
+                                        </div>                                   
+                                    </div>                
+                                
+                                </div> 
+                                <!--/Row -->
+
+                                
+                                <!-- Row -->
+                                <div class="content-row row_padding_left row_padding_right full light-section fadeout-element" data-bgcolor="#eee">
+                                    
+                                    <hr>
+                                    
+                                    <h1 class="text-align-center">In order to build <span class="has-hover-image hide-ball" data-img="images/BrandTextIMG.png">brands</span> everyone thinks off, you need to think of <span class="has-hover-image hide-ball" data-img="images/textimg2.png">everyone</span></h1>
+                                    
+                                    <hr><hr> 
+                                    
+                                    <div class="one_half sec3-inf">
+                                        <h5 class="has-mask-fill">What we do</h5>
+                                        <p class="has-animation" data-delay="0"> We are a Digitalization, Aka a Talent, Branding & Business Digital Agency With an aestethic and creative approach to branding, business and content. Attention is the currency of today's world, and we strongly believe we can help you get it, maintain it & monetize it.</p>
+                                    </div>
+                                    
+                                    <div class="one_half last sec3-inf">
+                                        <h5 class="has-mask-fill">Our Approach</h5>
+                                        <p class="has-animation" data-delay="100"> We believe in modernizing your future, wether you are a business, an artist or a content creator. We have an [ array ] of different services that we taylor specifically to your needs. In the digital era we live in today your most important asset is your brand, so let us take it to the next level.
+                                            </br>
+                                            </br> 
+                                            How, You ask ?
+                                            </br>
+                                        </p>
+                                        <div class="button-wrap right button-link large-btn has-animation">
+                                            <div class="icon-wrap parallax-wrap">
+                                                <div class="button-icon parallax-element">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                            <a class="ajax-link" data-type="page-transition" href="services.html"><div class="button-text sticky right"><span data-hover="Sticky Button Right">Our Services</span></div></a> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="one_half">
+                                        <div class="button-wrap right">
+                                            <div class="icon-wrap parallax-wrap">
+                                                <div class="button-icon parallax-element">
+                                                    <i class="arrow-icon-down"></i>
+                                                </div>
+                                            </div>
+                                            <a class="ajax-link" data-type="page-transition" href="about.html"><div class="button-text sticky right"><span data-hover="Read About Us">Read About Us</span></div></a> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="one_half last"></div>
+                                    
+                                    <hr>
+                                
+                                </div> 
+                                <!--/Row -->
+                                
+                                
+                                <!-- Row -->
+                                <div class="content-row full dark-section change-header-color about-us-sec" data-bgcolor="#eee">
+                                   
+                                    <figure class="has-parallax has-parallax-content" data-delay="100">
+                                        <img src="images/about.jpg" alt="Image Title">
+                                        <div class="parallax-image-content content-max-width text-align-center">
+                                            <div class="outer">
+                                                <div class="inner inner-aboutus">                                                
+                                                    <h3 class="has-mask-fill no-margins"> WE SPECIALIZE IN TURNING </h3>
+                                                    <h3 class="has-mask-fill"> ART INTO BUSINESS </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                
+                                </div> 
+                                <!--/Row -->
+                                
+                                
+                                <!-- Row -->
+                                <div class="content-row row_padding_top row_padding_left row_padding_right full light-section" data-bgcolor="#eee">
+                                    
+                                    <h6>/ CONTACT US</h6>
+                                    <hr>
+                                    <h1 class="big-title1 has-mask-fill no-margins">DON'T</h1>
+                                    <h1 class="big-title1 has-mask-fill no-margins">BE A STRANGER</h1>
+                                    
+                                    <hr><hr><hr><hr>
+
+                                    <div class="one_half">
+
+                                        <h5>
+                                            SAY HELLO
+                                        </h5>
+                                        
+                                        <p class="sayhello-p">
+                                            We love working with passionate people and brands,
+                                            specially those who share our vision. We are meticulate
+                                            and efficient, we dont just do art for no good reason, or
+                                            just follow trends for the sake of it. We are a logically guided
+                                            creative studio, and we believe that an innovative and aesthetic approach
+                                            to your brand is how you stand out and rise above the noise.
+                                        </p>
+
+                                        <hr><hr>
+                                    
+                                    </div>
+
+                                    <div class="one_half ">
+
+                                        <h5>
+                                            QUALITY OVER QUANTITY
+                                        </h5>
+
+                                        <p class="sayhello-p"> 
+                                            We are truly invested in the sentiment behind the common phrase, quality over quantity. 
+                                            Which is why we only take a handful of projects each year. We pick the projects that we 
+                                            feel best align with our vision and brand. This way we are able to truly devote ourselves 
+                                            to each project and deliver an outstanding product.
+                                        </p>
+
+                                    </div>          
+
+                                </div> 
+                                <!--/Row -->    
+
+                                <!-- Row -->
+                                <div class="content-row padding_small_bt full light-section minifooter-sec" data-bgcolor="#eee">                                
+                                    
+                                </div>
+                                <!--/Row -->
+                            
+                            </div>
+                            <!--/Main Page Content -->
+                            
+                            
+                            <!-- Page Navigation --> 
+                            <div id="page-nav">
+                                <div class="page-nav-wrap">
+                                    <div class="page-nav-caption content-full-width block-title marquee-title">                                 
+                                        <div class="inner">                                        
+                                            <a class="page-title next-ajax-link-page" data-type="page-transition" data-firstline="Our" data-secondline="Services" href="services.html">                                            
+                                                <div class="next-hero-title-wrapper"><div class="next-hero-title"><span>Z-THEORY</span> <span>LABS ™</span></div></div>
+                                            </a>
+                                            <div class="next-hero-subtitle-wrapper"><div class="next-hero-subtitle">
+                                                <span>We want to work with you.</span>
+                                                <span>Send us a message</span>
+                                            </div></div>
+                                        </div>               
+                                    </div>
+                                </div>
+                            </div>      
+                            <!--/Page Navigation -->
+                            
+                                    
+                        </div>
+                        <!--/Main Content --> 
+                    
+                    </div>
+                    <!--/Main -->
+                    
+                    <!-- Footer -->
+                    <footer class="hidden">        	
+                        <div id="footer-container">
+                            
+                            <div id="backtotop" class="button-wrap left">
+                                <div class="icon-wrap parallax-wrap">
+                                    <div class="button-icon parallax-element">
+                                        <i class="arrow-icon-up"></i>
+                                    </div>
+                                </div>
+                                <div class="button-text sticky left"><span data-hover="Top">Top</span></div> 
+                            </div>
+                            
+                            <div class="footer-middle">
+                                <div class="copyright"><a class="link" target="_blank" href="https://ztheory.io/">Z-Theory Labs</a> © 2022</div>
+                            </div>
+                            
+                            <div class="socials-wrap">            	
+                                <div class="socials-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                                <div class="socials-text">Follow Us</div>
+                                <ul class="socials">
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="https://dribbble.com/ztheorylabs" target="_blank">Db</a></span></li>
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.twitter.com/ztheorylabs" target="_blank">Tw</a></span></li>
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.behance.com/ztheory" target="_blank">Be</a></span></li>
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/ztheorylabss" target="_blank">Fb</a></span></li>
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/ztheorylabs/" target="_blank">In</a></span></li>
+                                </ul>                
+                            </div>
+                            
+                        </div>
+                    </footer>
+                    <!--/Footer -->
+                
+            
                 </div>
+                <!--/Content Scroll -->
+                
+                <div id="app"></div>
+                
+                
+            </div>    
+            <!--/Page Content -->
+        
+            </div>
+        </main>
+        
+        
+        
+        
+        <div class="cd-cover-layer"></div>
+        <div id="magic-cursor">
+            <div id="ball">
+                <div id="ball-drag-x"></div>
+                <div id="ball-drag-y"></div>
+                <div id="ball-loader"></div>
             </div>
         </div>
-
-        <div class="projects-info">
-
-            <div class="projects-info-div mashup-info">
-                <div class="info-header"> 
-                    <div class="info-title">
-                        <div class="arrow-title-left arrows-title">
-                            <i class="fas fa-chevron-left"></i>
-                        </div>
-                         Mashup 
-                         <div class="arrow-title-right arrows-title">
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                    </div>
-
-                    <div class="info-body">
-                        <div class="info-about">
-                            About the project
-                        </div>
-                        <div class="info-paragraphs">
-                            <p>
-                                Mashup Collection is a digital art collection that was 
-                                designed and created digitally, with each piece being an NFT,
-                                meaning a unique digital identifier that cannot be duplicated.
-                            </p>
-                            <p>
-                                Created by Z-Theory's in house digital artist, an abstract and 
-                                minimalistic inspired art collection. 'Mashup Collection Vol 1 2022'  
-                            </p>
-                        </div>
-                        <div class="info-client">
-                            Project: Mashup <br/>
-                            Year: 2022
-                        </div>
-                    </div>
-
-                </div>
-                <div class="info-imgs-1">
-                    <div class="info-img1-div">
-                        <img src="./assets/images/mashup-example-img1.webp" alt="mashup info image 1">
-                    </div>
-                </div>
-                <div class="info-imgs-2">
-                    <div class="info-img2-div">
-                        <img src="./assets/images/mashup-example-img2.webp" alt="mashup info image 2">
-                        <img src="./assets/images/mashup-example-img3.webp" alt="mashup info image 3">
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-info-div novozco-info inactive">
-                <div class="info-header"> 
-                    <div class="info-title">
-                        <div class="arrow-title-left arrows-title">
-                            <i class="fas fa-chevron-left"></i>
-                        </div>
-                         Novozco 
-                         <div class="arrow-title-right arrows-title">
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                    </div>
-
-                    <div class="info-body">
-                        <div class="info-about">
-                            About the project
-                        </div>
-                        <div class="info-paragraphs">
-                            <p>
-                                Novozco Pools is a fast growing pool 
-                                business out of Houston, Texas. They 
-                                got in contact with us because they 
-                                wanted to expand their business 
-                                through an online presence.
-                            </p>
-                            <p>
-                                We Were happy to help out with their 
-                                website and we are currently working 
-                                with them in creating their own app, so 
-                                that they can offer their clients an 
-                                efficient and frictionless service.   
-                            </p>
-                        </div>
-                        <div class="info-client">
-                            Site: <a href="https://novozco.com/" target="_blank">Novozco.com</a> <br/>
-                            Year: 2022
-                        </div>
-                    </div>
-
-                </div>
-                <div class="info-imgs-1">
-                    <div class="info-img1-div">
-                        <img src="./assets/images/novozco-example-img1.webp" alt="novozco info image 1">
-                    </div>
-                </div>
-                <div class="info-imgs-2">
-                    <div class="info-img2-div">
-                        <img src="./assets/images/novozco-example-img2.webp" alt="novozco info image 2">
-                        <img src="./assets/images/novozco-example-img3.webp" alt="novozco info image 3">
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-info-div figura-info inactive">
-                <div class="info-header"> 
-                    <div class="info-title">
-                        <div class="arrow-title-left arrows-title">
-                            <i class="fas fa-chevron-left"></i>
-                        </div>
-                         Figura 
-                         <div class="arrow-title-right arrows-title">
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                    </div>
-
-                    <div class="info-body">
-                        <div class="info-about">
-                            About the project
-                        </div>
-                        <div class="info-paragraphs">
-                            <p>
-                                Figura is a realistic modern sculpture 3D art gallery, digitally
-                                created and owned, inspired off the Early Classical period sculpture
-                                art but with a modern twist to it.
-                            </p>
-                            <p>
-                                Working towards incorporating this 3D art gallery and more 
-                                into a virtual reality world, where you can interact, view and
-                                even modify them.
-                            </p>
-                        </div>
-                        <div class="info-client">
-                            Project: Figura <br/>
-                            Year: 2022
-                        </div>
-                    </div>
-
-                </div>
-                <div class="info-imgs-1">
-                    <div class="info-img1-div">
-                        <img src="./assets/images/figura-example-img1.webp" alt="figura info image 1">
-                    </div>
-                </div>
-                <div class="info-imgs-2">
-                    <div class="info-img2-div">
-                        <img src="./assets/images/figura-example-img2.webp" alt="figura info image 2">
-                        <img src="./assets/images/figura-example-img3.webp" alt="figura info image 3">
-                    </div>
-                </div>
-            </div>
-
+        <div id="clone-image">
+            <div class="hero-translate"></div>
         </div>
-
-    </main>
-
-<script src="./assets/js/jquery-3.6.1.min.js"></script>
-<script src="./assets/js/script.js"></script>
-</body>
-</html>
+        <div id="rotate-device"></div>
+        
+        
+            
+        <script src="js/jquery.min.js"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" ></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js'></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
+        <script src="js/ztheorywebgl.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="./js/index.js"></script>
+    
+    
+    
+    </body>
+    
+    </html>
