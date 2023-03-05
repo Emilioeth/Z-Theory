@@ -318,6 +318,62 @@ Page Load Actions
 				$('#ball p').remove();				
 			});		
 		}	
+
+		if (!isMobile()) {			
+			$(".jobs-hover").on('mouseenter', function() {	
+				var $this = $(this);			
+				gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.2, borderColor:$("body").data('primary-color'), backgroundColor:$("body").data('primary-color')});
+				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
+				$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
+			});								
+			$(".jobs-hover").on('mouseleave', function() {					
+				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
+				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
+				$('#ball p').remove();				
+			});		
+		}	
+
+		if (!isMobile()) {			
+			function onMouseHoverJobs() {
+
+				$( "#ball" ).append( '<div class="circle-text-div"></div>' );
+
+				$('.circle-text-div').append( '<div class="cursor-text-div"></div>' );
+
+				$('.cursor-text-div').append('<p id="cursor-text"></p>');
+
+				const text = document.querySelector('#cursor-text')
+
+				text.innerHTML = 'APPLY NOW • APPLY NOW • APPLY NOW • APPLY NOW •'
+
+				text.innerHTML = text.innerText.split('').map(
+					(char, i) => 
+					`<span style="transform:rotate(${i * 7.6}deg)">${char}</span>`
+				).join('')
+
+				$( "#ball" ).addClass("with-icon").append( '<i class="arrow-icon"></i>' );
+				gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 2, borderColor:'#222222', backgroundColor:'#222222'});
+
+			}
+
+			function onMouseHoverOutJobs() {
+
+				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
+				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
+
+				$( "#ball" ).removeClass("with-icon");
+				$('#ball i').remove();
+				$('#ball .circle-text-div').remove();
+
+			}
+
+			const $hoverjobs = document.querySelectorAll('.weare-hiring');
+
+			for (let i = 0; i < $hoverjobs.length; i++) {
+			$hoverjobs[i].addEventListener('mouseenter', onMouseHoverJobs);
+			$hoverjobs[i].addEventListener('mouseleave', onMouseHoverOutJobs);
+			}	
+		}	
 		
 		if (!$("body").hasClass("disable-ajaxload")) {
 			$('#page-nav .page-title').on('click', function() {	
@@ -1969,8 +2025,6 @@ Function Portfolio
 			
 			
 			if (!isMobile()) {
-				
-				const $ball = document.querySelector('#ball')
 
 				function onMouseHoverLatest() {
 
@@ -2011,35 +2065,6 @@ Function Portfolio
 				$hoverableLatest[i].addEventListener('mouseenter', onMouseHoverLatest);
 				$hoverableLatest[i].addEventListener('mouseleave', onMouseHoverOut);
 				}
-
-				// function onMouseHoverMore() {
-
-				// 	$( "#ball" ).append( '<div class="circle-text-div"></div>' );
-
-				// 	$('.circle-text-div').append( '<div class="cursor-text-div"></div>' );
-
-				// 	$('.cursor-text-div').append('<p id="cursor-text"></p>');
-
-				// 	const text = document.querySelector('#cursor-text')
-
-				// 	text.innerHTML = 'READ ABOUT US • READ ABOUT US • READ ABOUT US • '
-
-				// 	text.innerHTML = text.innerText.split('').map(
-				// 		(char, i) => 
-				// 		`<span style="transform:rotate(${i * 7.5}deg)">${char}</span>`
-				// 	).join('')
-
-				// 	$( "#ball" ).addClass("with-icon").append( '<i class="arrow-icon"></i>' );
-				// 	gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 2, borderColor:'#222222', backgroundColor:'#222222'});
-
-				// }
-
-				// const $hoverableReadMore = document.querySelectorAll('.about-us-sec');
-
-				// for (let i = 0; i < $hoverableReadMore.length; i++) {
-				// $hoverableReadMore[i].addEventListener('mouseenter', onMouseHoverMore);
-				// $hoverableReadMore[i].addEventListener('mouseleave', onMouseHoverOut);
-				// }
 				
 				$("#close-filters").mouseenter(function(e) {	
 					$( "#ball" ).addClass("close-icon").append( '<i class="fa-solid fa-xmark"></i>' );

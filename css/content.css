@@ -402,6 +402,34 @@
 
 	/* SERVICES END */
 
+	/* Jop Openings */
+
+
+	.jop-openings-wrap {
+		display: flex;
+		width: 100vw;
+		justify-content: space-evenly;
+	}
+
+	.hiring-job-hero {
+		width: 100vw;
+		min-height: 70vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.jobdetails-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.jobdetails-text p {
+		width: 50%;
+	}
+
+	/* Jop Openings END */
+
 	.minifooter-sec {
 		top: 160px;
 		z-index: 100000!important;
