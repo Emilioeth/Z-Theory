@@ -42,22 +42,22 @@ Function Contact Formular
 			$('#message div').remove();
 
 			if(nameForm.value.trim() == '') {
-				$('#message').append('<div class="error_message">Attention! You must enter your name.</div>')
+				$('#message').append('<div class="error_message">You must enter your name.</div>')
 			}
 			else if(emailForm.value.trim() == '') {
-				$('#message').append('<div class="error_message">Attention! Please enter a valid email address.</div>')
+				$('#message').append('<div class="error_message">Please enter a valid email address.</div>')
 			}
 			else if(!ValidateEmail(emailForm.value)) {
-				$('#message').append('<div class="error_message">Attention! You have enter an invalid e-mail address, try again.</div>')
+				$('#message').append('<div class="error_message">You have enter an invalid e-mail address, try again.</div>')
 			}
 			else if(commentsForm.value.trim() == '') {
-				$('#message').append('<div class="error_message">Attention! Please enter a message.</div>')
+				$('#message').append('<div class="error_message">Please enter a message.</div>')
 			}
 			else if(verifyForm.value.trim() == '' ) {
-				$('#message').append('<div class="error_message">Attention! Please complete the captcha validation.</div>')
+				$('#message').append('<div class="error_message">Please complete the captcha validation.</div>')
 			}
 			else if(verifyForm.value.trim() != '4' ) {
-				$('#message').append('<div class="error_message">Attention! The verification number you entered is incorrect.</div>')
+				$('#message').append('<div class="error_message">The verification number you entered is incorrect.</div>')
 			}
 			else {
 				document.querySelector('#contactform').submit();
