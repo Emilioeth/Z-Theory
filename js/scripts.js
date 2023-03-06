@@ -1107,7 +1107,7 @@ Function Showcase Webgl Slider Core
 
 				`;
 
-			var gl_canvas = new ClapatWebGL({
+			var gl_canvas = new ZtheoryWebGL({
 					vertex: vertex,
 					fragment: fragment,
 			});
