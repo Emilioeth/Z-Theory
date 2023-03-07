@@ -1586,4 +1586,20 @@
 
 
 /* 404 SECTION END */
+
+/* Thankyou Page */
+
+.thankyou-pag {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.thankyou-txt {
+	text-align: center;
+}
+
+/* Thankyou Page End */
 	
