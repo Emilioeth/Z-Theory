@@ -95,7 +95,7 @@ Function Contact Formular
 		const emailForm = document.querySelector('#email-apply');
 		const commentsForm = document.querySelector('#comments-apply');
 		const verifyForm = document.querySelector('#verify');
-		const btnForm = document.querySelector('#submit-btn');
+		const btnForm = document.querySelector('#submit-btn-apply');
 
 		btnForm.addEventListener('click', function(){
 
