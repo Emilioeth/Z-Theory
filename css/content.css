@@ -402,6 +402,95 @@
 
 	/* SERVICES END */
 
+	/* APPLY */
+
+
+	.form-apply{
+	}
+	#apply-formular{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	#applyform {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.name-box-apply, .email-box-apply, .message-box-apply, .vbox-apply {
+		margin: 0px 0px 55px 0px;
+		width: 50%!important;
+	}
+	.select-box-apply{
+		margin: 0px 0px 55px 0px;
+		width: 50%!important;
+		font-size: calc(1rem + 0.30vw);
+		/* height: 100px; */
+	}
+	.select-box-apply label, .select-box-apply select {
+		width: 100%;
+	}
+	.applynow-text {
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	.input_label-apply {
+		color: rgba(0, 0, 0, 1)!important;
+		font-family: 'basis_grotesque_promedium', sans-serif!important;
+		font-weight: 400!important;
+		height: 50px!important;
+		padding: 12px 20px 12px 20px!important;
+		padding-left: 0!important;
+		width: 100%!important;
+		border-radius: 0px!important;
+		margin-bottom: 0px!important;
+		border: none!important;
+		-webkit-transition: all 0.2s linear!important;
+		transition: all 0.2s linear!important;
+		box-sizing: border-box!important;
+		background-color: transparent!important;
+		outline: none!important;
+		position: static!important;
+	}
+	#hours, #money {
+		border-radius: 30px;
+		background-color: #222;
+		height: 40px;
+		color: white;
+		border: solid 2px;
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	@media(max-width:1000px){
+		.jobdetails-text p, .select-box-apply, .name-box-apply, .email-box-apply, .message-box-apply {
+			width: 100%!important;
+		}
+	}
+
+	@media(max-width:767px){
+		.input_label-apply {
+			font-size: 14px;
+		}
+		#hours, #money {
+			height: 32px;
+			font-size: 12px;
+		}
+	}
+
+	@media(max-width:675px){
+		.vbox-apply{
+			width: 100%!important;
+		}
+	}
+
+
+
+	/* APPLY END */
+
 	/* Jop Openings */
 
 
