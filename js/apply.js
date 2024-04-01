@@ -1,4 +1,12 @@
 
+function formActivation() {
+
+    setTimeout(() => {
+        ApplyForm()
+    }, 1500);
+
+    console.log('hello (:')
+}
 
 
 function ApplyForm() {	
@@ -71,13 +79,4 @@ function ValidateEmail(input) {
   
     }
   
-}
-
-function formActivation() {
-
-    setTimeout(() => {
-        ApplyForm()
-    }, 1500);
-
-    console.log('hello (:')
 }
