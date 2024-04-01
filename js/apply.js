@@ -79,6 +79,6 @@ function ApplyForm() {
     })
 
 
-    
+    formActivation()
 
 }//End ApplyForm	
