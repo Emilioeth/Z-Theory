@@ -1953,7 +1953,7 @@
 		background-color:transparent;
 	}
 	
-	input#verify {
+	input#verify, input#verify-apply {
 		float: left;
 		width: 34px;
 		padding: 0;
@@ -1967,12 +1967,13 @@
 		color:#fff;
 	}
 	
-	.light-content input#verify, .dark-section  input#verify {
+	.light-content input#verify, .dark-section  input#verify,
+	.light-content input#verify-apply, .dark-section  input#verify-apply {
 		background-color:#fff;
 		color:#222;
 	}
 	
-	.light-content .light-section  input#verify {
+	.light-content .light-section  input#verify, .light-content .light-section  input#verify-apply {
 		background-color:#222;
 		color:#fff;
 	}
@@ -2190,7 +2191,7 @@
 		margin-top:20px;		
 	}
 	
-	#message fieldset {		
+	#message fieldset, #message-apply fieldset {		
 		border:none;		
 	}
 	

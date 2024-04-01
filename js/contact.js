@@ -94,30 +94,30 @@ Function Contact Formular
 		const nameForm = document.querySelector('#name-apply');
 		const emailForm = document.querySelector('#email-apply');
 		const commentsForm = document.querySelector('#comments-apply');
-		const verifyForm = document.querySelector('#verify');
+		const verifyForm = document.querySelector('#verify-apply');
 		const btnForm = document.querySelector('#submit-btn-apply');
 
 		btnForm.addEventListener('click', function(){
 
-			$('#message div').remove();
+			$('#message-apply div').remove();
 
 			if(nameForm.value.trim() == '') {
-				$('#message').append('<div class="error_message">You must enter your name.</div>')
+				$('#message-apply').append('<div class="error_message">You must enter your name.</div>')
 			}
 			else if(emailForm.value.trim() == '') {
-				$('#message').append('<div class="error_message">Please enter a valid email address.</div>')
+				$('#message-apply').append('<div class="error_message">Please enter a valid email address.</div>')
 			}
 			else if(!ValidateEmail(emailForm.value)) {
-				$('#message').append('<div class="error_message">You have enter an invalid e-mail address, try again.</div>')
+				$('#message-apply').append('<div class="error_message">You have enter an invalid e-mail address, try again.</div>')
 			}
 			else if(commentsForm.value.trim() == '') {
-				$('#message').append('<div class="error_message">Please enter a message.</div>')
+				$('#message-apply').append('<div class="error_message">Please enter a message.</div>')
 			}
 			else if(verifyForm.value.trim() == '' ) {
-				$('#message').append('<div class="error_message">Please complete the captcha validation.</div>')
+				$('#message-apply').append('<div class="error_message">Please complete the captcha validation.</div>')
 			}
 			else if(verifyForm.value.trim() != '4' ) {
-				$('#message').append('<div class="error_message">The verification number you entered is incorrect.</div>')
+				$('#message-apply').append('<div class="error_message">The verification number you entered is incorrect.</div>')
 			}
 			else {
 				document.querySelector('#applyform').submit();
@@ -128,16 +128,16 @@ Function Contact Formular
 		})
 
 		nameForm.addEventListener("change", function(){
-			$('#message div').remove();
+			$('#message-apply div').remove();
 		})
 		emailForm.addEventListener("change", function(){
-			$('#message div').remove();
+			$('#message-apply div').remove();
 		})
 		commentsForm.addEventListener("change", function(){
-			$('#message div').remove();
+			$('#message-apply div').remove();
 		})
 		verifyForm.addEventListener("change", function(){
-			$('#message div').remove();
+			$('#message-apply div').remove();
 		})
 	
 
