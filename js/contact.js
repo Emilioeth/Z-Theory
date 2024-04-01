@@ -25,10 +25,6 @@ Function Contact Formular
 			ContactForm()
 		}, 1500);
 
-		setTimeout(() => {
-			ApplyForm()
-		}, 1500);
-
 		console.log('hello')
 	}
 
@@ -88,62 +84,6 @@ Function Contact Formular
 		
 
 	}//End ContactForm	
-
-	function ApplyForm() {	
-
-		const nameForm = document.querySelector('#name-apply');
-		const emailForm = document.querySelector('#email-apply');
-		const commentsForm = document.querySelector('#comments-apply');
-		const verifyForm = document.querySelector('#verify-apply');
-		const btnForm = document.querySelector('#submit-btn-apply');
-
-		btnForm.addEventListener('click', function(){
-
-			$('#message-apply div').remove();
-
-			if(nameForm.value.trim() == '') {
-				$('#message-apply').append('<div class="error_message">You must enter your name.</div>')
-			}
-			else if(emailForm.value.trim() == '') {
-				$('#message-apply').append('<div class="error_message">Please enter a valid email address.</div>')
-			}
-			else if(!ValidateEmail(emailForm.value)) {
-				$('#message-apply').append('<div class="error_message">You have enter an invalid e-mail address, try again.</div>')
-			}
-			else if(commentsForm.value.trim() == '') {
-				$('#message-apply').append('<div class="error_message">Please enter a message.</div>')
-			}
-			else if(verifyForm.value.trim() == '' ) {
-				$('#message-apply').append('<div class="error_message">Please complete the captcha validation.</div>')
-			}
-			else if(verifyForm.value.trim() != '4' ) {
-				$('#message-apply').append('<div class="error_message">The verification number you entered is incorrect.</div>')
-			}
-			else {
-				document.querySelector('#applyform').submit();
-			}
-
-
-			
-		})
-
-		nameForm.addEventListener("change", function(){
-			$('#message-apply div').remove();
-		})
-		emailForm.addEventListener("change", function(){
-			$('#message-apply div').remove();
-		})
-		commentsForm.addEventListener("change", function(){
-			$('#message-apply div').remove();
-		})
-		verifyForm.addEventListener("change", function(){
-			$('#message-apply div').remove();
-		})
-	
-
-		
-
-	}//End ApplyForm	
 
 /*--------------------------------------------------
 Function Contact Map
