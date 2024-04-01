@@ -487,6 +487,31 @@
 		}
 	}
 
+	.button-div-apply {
+		width: 100%!important;
+		display: flex!important;
+		justify-content: center!important;
+	}
+	.btn-wrap-apply {
+		width: 100%!important;
+	}
+	.ztheory-btn-apply {
+		width: 30%!important;
+	}
+	.apply-content{
+		display: flex!important;
+		justify-content: center!important;
+		align-items: center!important;
+		height: 100vh!important;
+		width: 100vw!important;
+		flex-direction: column!important;
+	}
+	.abtn-apply {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
 
 
 	/* APPLY END */
