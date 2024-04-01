@@ -79,6 +79,9 @@ function ApplyForm() {
     })
 
 
-    formActivation()
+    setTimeout(() => {
+        formActivation()
+    }, 1000);
+
 
 }//End ApplyForm	
